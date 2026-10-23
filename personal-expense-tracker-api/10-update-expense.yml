@@ -1,0 +1,24 @@
+info:
+  name: 10-update-expense
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/api/expenses/9
+  body:
+    type: json
+    data: |-
+      {
+        "amount": 89.99
+      }
+  auth:
+    type: bearer
+    token: 5|kNSaGMBo4kxeiLA8OA1Hohp6JUXq45ASw268U0Ml8ae61a22
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

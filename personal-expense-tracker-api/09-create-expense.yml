@@ -1,0 +1,26 @@
+info:
+  name: 09-create-expense
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/expenses
+  body:
+    type: json
+    data: |-
+      {
+        "title":"Hollowen Party Buy From B&M",
+        "amount": 11.15,
+        "category":"Glossary"
+      }
+  auth:
+    type: bearer
+    token: 5|kNSaGMBo4kxeiLA8OA1Hohp6JUXq45ASw268U0Ml8ae61a22
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
